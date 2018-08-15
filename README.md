@@ -1,2 +1,2 @@
 # openwrt-package-upgrade
-Easily upgrade all of your OpenWrt packages
+### Easily upgrade all of your OpenWrt packages
