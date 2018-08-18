@@ -63,18 +63,18 @@ echo
 };
 
 case $1 in
--V)
+--version)
 	printf "$0, version $SCRIPTVERSION-$(uname)\n"
 	printf "Copyright (c) 2017-2018 Robert LaRocca\n"
 	;;
-list)
+-l|--list)
 	list_packages
 	total_packages
 	;;
-update)
+-u|--update)
 	update_packages
 	;;
-upgrade)
+-a|--upgrade)
 	upgrade_packages
 	free_memory
 	;;
