@@ -62,10 +62,38 @@ fi
 echo
 };
 
+command_help()
+{
+cat <<EOF
+Usage:	$0 [-aul] [--help] [--version]
+
+Display program information and how it works.
+
+  -a, --upgrade	upgrade all available packages
+  -u, --update	update package repositories and signatures
+  -l, --list	list upgradable packages
+  --help	print command usage and exit
+  --version	print version and copyright information
+
+Examples:
+  $0 -a
+  $0 --update
+  $0 --list
+
+Version:
+$0, version $SCRIPTVERSION-$(uname)
+Copyright (c) 2017-2018 Robert LaRocca
+Source <https://github.com/robertlarocca/openwrt-package-upgrade>
+EOF
+};
+
 case $1 in
 --version)
 	printf "$0, version $SCRIPTVERSION-$(uname)\n"
 	printf "Copyright (c) 2017-2018 Robert LaRocca\n"
+	;;
+--help)
+	command_help
 	;;
 -l|--list)
 	list_packages
