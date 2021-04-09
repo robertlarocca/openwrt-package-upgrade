@@ -1,2 +1,3 @@
 # openwrt-package-upgrade
-### Easily upgrade all of your OpenWrt packages.
+
+OpenWrt package management (opkg) wrapper to help upgrade all available packages.
