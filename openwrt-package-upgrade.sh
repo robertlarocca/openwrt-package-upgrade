@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (c) 2017-2021 Robert LaRocca
+# Copyright (c) 2017-2023 Robert LaRocca
 
 # Use of this source code is governed by an MIT-style license that can be
 # found in the projects LICENSE file or https://www.laroccx.com/LICENSE.md
@@ -8,8 +8,8 @@
 #-------------------- Global Variables --------------------#
 
 # development
-script_version="1.0.2"
-script_release='release'	# options devel, beta, release
+script_version="1.1.0"
+script_release='release'	# options devel, beta, release, stable
 
 openwrt_server="http://downloads.openwrt.org"
 
